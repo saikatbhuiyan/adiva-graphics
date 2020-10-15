@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Adiva | Home{% endblock %}
+
+
+{% block content %}
+
+ <header class='header'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 w-50 pl-5 home-header">
+                <h1 class="header-text">
+                    <span class="header-text-main">
+                        Ousourcing 1.0
+                    </span>
+                    <span class="header-text-sub">
+                        Get to the basic with <br> Adiva Graphics
+                    </span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">More About Us <span class="arrow-icon">&rarr;</span></a>
+            </div>
+        </div>
+    </div>
+
+
+ </header>
+ 
+    <main>
+        <section class="charting">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 main-home-left">
+                        
+                        <h1 class="main-text">
+                            <div class="line"></div>
+                            <span class="main-text-main">
+                                However, since Charting is our <br> proverbial "Golden Goose",
+                            </span>
+                            <span class="main-text-sub">
+                                everyone is required, <br> regardless of specific department, <br> to expect that they will be charting <br> 100% of their time here <br> at Adiva Graphics.
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="col-sm-6 main-home-right">
+                        {% comment %} <img src="{% static 'images/Livelihood.jpg' %}" alt="" class="main-png"> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision">
+            <div class="vision-dev"  style="background-image: url('{% static '' %}');">
+            </div>
+        </section>
+
+        <section class="adiva-video">
+            <div class="video">
+               <video autoplay controls>
+                    <source src="{% static 'images/video.mp4' %}" type="video/mp4" >
+                </video> 
+                 {% comment %} <div class="embed-responsive embed-responsive-16by9" >
+                    <iframe class="embed-responsive-item" src="{% static 'images/video.mp4' %}" allowfullscreen></iframe>
+                </div> {% endcomment %}
+{% comment %} 
+            <video
+                id="my-video"
+                class="video-js vjs-theme-city"
+                controls
+                preload="auto"
+                width="900"
+                height="700"
+                poster="{% static 'images/logo.png' %}"
+                data-setup="{}"
+            >
+                <source src="{% static 'images/video.mp4' %}" type="video/mp4" >
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
+                </p> 
+            </video> {% endcomment %}
+            </div>
+    
+
+        </section>
+        <section class="project">
+            <div class="project-left">
+                <h1 class="project-text">
+                    <span class="sub-1"><strong class='sub-strong'>2000</strong> projects <br> in every Quarter</span>
+                    <span class="sub-1"><strong class='sub-strong'>100+ heads</strong> <br> working to serve you globall</span>
+                    <span class="sub-1"><strong class='sub-strong'>43,000+</strong> projects <br> have been <strong>completed </strong>so far</span>
+                </h1>
+            </div>
+        </section>
+    </main>
+    
+    {% include 'partials/_social.html' %}
+
+
+{% endblock %}

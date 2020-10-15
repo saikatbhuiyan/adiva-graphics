@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'css/icon-font.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Natours | Exciting tours for adventurous people</title>
+    </head>
+    
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="{% url 'home:home' %}" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Client Login</a></li>
+                    <li class="navigation__item"><a href="{% url 'about:about' %}" class="navigation__link"><span>03</span>About Us</a></li>
+                    <li class="navigation__item"><a href="{% url 'service:service' %}" class="navigation__link"><span>04</span>Services</a></li>
+                    {% comment %} <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>MindSet</a></li> {% endcomment %}
+                    <li class="navigation__item"><a href="{% url 'csr:csr' %}" class="navigation__link"><span>05</span>CSR Activity</a></li>
+                    <li class="navigation__item"><a href="{% url 'careers:career' %}" class="navigation__link"><span>06</span>Careers</a></li>
+                    <li class="navigation__item"><a href="{% url 'faqs:faqs' %}" class="navigation__link"><span>07</span>FAQs</a></li>
+                    <li class="navigation__item"><a href="{% url 'legal:legal' %}" class="navigation__link"><span>08</span>Legal</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </body>
+</html>
