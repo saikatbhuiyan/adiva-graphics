@@ -8,8 +8,7 @@
 
 }
 
-.legal__heading{
-    
+.legal__heading{ 
     position: absolute;
     top: 50%;
     left: 9%;
@@ -41,13 +40,15 @@
 .legal__work-head{
     position: absolute;
     top:10%;
-    height: 100%;
+    height: auto;
     transform: translate(0%, 0%);
 
 }
 
 .csr--work-head-text{
     text-align: center;
+    height: 100%;
+    margin-bottom: 5px;
 }
 
 .legal--work-head-text-main{

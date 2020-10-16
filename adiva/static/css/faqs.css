@@ -1,0 +1,59 @@
+.faqs-header{
+    background-image: url('../Images/Livelihood.jpg');
+    height: 95vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.faqs__heading{
+    
+    position: absolute;
+    top: 50%;
+    left: 9%;
+}
+
+.faqs--text{
+    width: 100%;
+    display: block;
+    color: #ffffff;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 0px 10px;
+    text-transform: capitalize;
+    
+}
+
+#faqs{
+    position: relative;
+    background-color: rgba(248, 241, 241, 0.576);
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.faqs__content{
+    position: absolute;
+ 
+    top:10%;
+    height: 100%;
+}
+
+.faqs__content h2{
+    font-size: 2rem;
+    margin-top: 10px;
+    padding-bottom: 20px; 
+    padding-left: 65px;
+}
+
+.faqs__content h5{
+    font-size: 2rem;
+    margin-top: 5px;
+    /* padding-top: 20px; */
+
+}
