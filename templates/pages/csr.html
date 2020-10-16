@@ -5,8 +5,31 @@
 
 {% block content %}
 
- <header class='header'>
-    <h1>CSR</h1>
+ <header class='csr-header'>
+    <div class="csr__heading">
+       <h1>
+          <span class="csr--text">
+            csr
+          </span>
+          <div class="csr--line"></div>
+       </h1> 
+       
+    </div>
+   
  </header>
+
+ <main>
+    <section class="csr-work">
+       <div class="csr__work-head">
+          <h1 class="csr--work-head-text">
+            <span class="csr--work-head-text-main">Corporate Social Responsibility</span>
+            <span class="csr--work-head-text-sub pl-5 pr-5">Participating in CSR initiatives allows our company to have the opportunity to share our core values and create trust among our employees, clients and our community. Our company’s continuous efforts to improve society is supported by foreign revenue generated from our clients. We have a few core issues that needs to be addressed in our society and hence, AdivaGraphics is constantly working towards our community’s prosperity.</span>
+          </h1>
+       </div>
+    </section>
+
+    {% include 'partials/_social.html' %}
+
+ </main>
 
 {% endblock %}
